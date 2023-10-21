@@ -15,6 +15,7 @@
     $Destination = "C:\Users\$User"
 )
 
+$ErrorActionPreference = 'SilentlyContinue'
 
 # Create compressed archives of user data to be migrated
 
