@@ -2,16 +2,13 @@
 
  Param(
     
-    [Parameter]
     [String]
     $User = $env:USERNAME,
 
-    [Parameter]
-    [System.IO.Directory]
+    [String]
     $Source = "C:\Temp",
 
-    [Parameter]
-    [System.IO.Directory]
+    [String]
     $Destination = "C:\Users\$User"
 )
 
