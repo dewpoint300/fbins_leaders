@@ -16,8 +16,10 @@ $ErrorActionPreference = 'SilentlyContinue'
 
 # Get 7za.exe if it isn't in the destination
 if (!(Test-Path $Destination\7za.exe)){
-$7zURL = "https://github.com/develar/7zip-bin/raw/master/win/x64/7za.exe"
-Invoke-WebRequest -Uri $7zURL -OutFile "$Destination\7za.exe"
+#$7zURL = "https://github.com/develar/7zip-bin/raw/master/win/x64/7za.exe"
+#Invoke-WebRequest -Uri $7zURL -OutFile "$Destination\7za.exe"
+Copy-Item D:\7za.exe $Destination
+Copy-Item E:\7za.exe $Destination
 }
 
 # Stop browser processes
